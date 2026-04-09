@@ -1,0 +1,15 @@
+[project]
+name = "job-application-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.6, <=3.11"
+dependencies = [
+    "pyinstaller>=4.10",
+    "pyqt5>=5.15",
+]
+[tool.uv]
+constraint-dependencies = [
+    "pyqt5-qt5<=5.15.2; sys_platform == 'win32'",
+    "pyqt5; sys_platform == 'win32'"
+]
